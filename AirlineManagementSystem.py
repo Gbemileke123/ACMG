@@ -1,4 +1,4 @@
-from aircraftmanager import AircraftManager
+from aircraftManager import AircraftManager
 from flightManager import FlightManager
 from bookingManager import BookingManager
 from passangersManager import PassangersManager
@@ -50,9 +50,9 @@ def handleManageAircraftsAction(action):
         aircraftManager.list()
     elif action == "2":
         capacity = input("Enter capacity: ")
-        aircraftNo = input("Enter aircraftno")
-        types = input("Enter types")
-        name = input("Enter name")
+        aircraftNo = input("Enter aircraftno: ")
+        types = input("Enter types: ")
+        name = input("Enter name: ")
         aircraftManager.create(capacity,aircraftNo,types,name)
         print("Congrats! Your AircraftNo ",aircraftNo," is created successfully")
     elif action == "3":
